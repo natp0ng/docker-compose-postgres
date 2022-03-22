@@ -21,6 +21,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - api
     # restart: always
     restart: unless-stopped
 
@@ -34,8 +36,17 @@ services:
       - pgadmin:/root/.pgadmin
     ports:
       - "${PGADMIN_PORT:-5050}:80"
+    depends_on:
+      - postgres
+    networks:
+      - api
     restart: unless-stopped
 
 volumes:
   pgsqldata:
   pgadmin:
+
+networks:
+  api:
+    driver: bridge
+

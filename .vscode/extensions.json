@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "cweijan.vscode-postgresql-client2",
+        "redhat.vscode-yaml",
+        "mikestead.dotenv",
+        "rangav.vscode-thunder-client"
+    ]
+}

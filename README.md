@@ -6,18 +6,8 @@
 docker-compose up -d
 ```
 
-## Check log
-
-docker-compose logs <name-of-service>
+## Verification
 
 ```bash
-docker-compose logs postgres
+telnet localhost 25432
 ```
-
-## Connect
-
-```bash
-psql -h localhost -U postgres -p 25432
-```
-
-pass: *postgres*
