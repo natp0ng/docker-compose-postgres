@@ -1,5 +1,11 @@
 # PSQL Command
 
+## Get help
+
+```bash
+postgres=# \?
+```
+
 ## Connect DB
 
 ```bash
@@ -18,6 +24,8 @@ CREATE DATABASE
 
 ```psql
 postgres=# exit
+# or
+postgres=# \q
 ```
 
 ## Import DB
